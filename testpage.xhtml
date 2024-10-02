@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+    <h:head>
+        <title>Test</title>
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            .leftCont{
+                position: fixed;
+                top:0%;
+                left:0%;
+                height:100%;
+                width:10%;
+                background-color:#bfff00;
+                box-shadow:10px 5px 5px gray;
+            }
+
+            .rightCont{
+                position: fixed;
+                top:0%;
+                right:0%;
+                height:100%;
+                width:10%;
+                background-color:#bfff00;
+                box-shadow:10px 5px 5px 20px gray;
+            }
+        </style>
+
+
+    </h:head>
+    <h:body>
+        <br/><br/><br/><br/>
+        <div class="flex-center position-ref ">
+            If we are talking about JS, how 'null' and '0' can be compared?
+        </div>
+        <div class="flex-center position-ref ">
+            <h:form id="testForm">
+                <p>please input your anser here</p>
+                <h:inputText id='ans' value='#{answerController.ans}'/>
+                <h:message for='ans' errorStyle="color:red" infoStyle="color:green"/>
+                <br/>
+                <h:commandButton id="addAns" action="#{answerController.newMsg}" value="New answer"/>
+            </h:form>
+        </div>
+        <br/><br/><br/>
+        <div class="flex-center position-ref ">
+            <h:form id="routeForm">
+                <h:commandButton id="nav" action="#{navigationController.index}" value="Home"/>
+            </h:form>
+
+        </div >
+        <div class="leftCont"></div>
+        <div class="rightCont"></div><br/><br/><br/><br/>
+        <div class="links flex-center">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Correct answer (Documentation)</a></div>
+    </h:body>
+</html>

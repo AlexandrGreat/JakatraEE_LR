@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+    <h:head>
+        <title>JAVA EE LR4</title>
+                <title>About</title>
+                <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            .leftCont{
+                position: fixed;
+                top:0%;
+                left:0%;
+                height:100%;
+                width:10%;
+                background-color:#bfff00;
+                box-shadow:10px 5px 5px gray;
+            }
+
+            .rightCont{
+                position: fixed;
+                top:0%;
+                right:0%;
+                height:100%;
+                width:10%;
+                background-color:#bfff00;
+                box-shadow:10px 5px 5px 20px gray;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="flex-center position-ref">
+        This is the main page of LR4
+        </div>
+        <div class="flex-center position-ref">
+        <h:form id="routeForm">
+            <h:commandButton id="nav" action="#{navigationController.aboutPage}" value="About"/>
+            <h:commandButton id="nav1" action="#{navigationController.testPage}" value="Test"/>
+        </h:form>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="leftCont"></div>
+        <div class="rightCont"></div><br/><br/><br/><br/>
+    </h:body>
+</html>
